@@ -50,3 +50,9 @@ test.environment([
 springBoot {
     buildInfo()
 }
+
+test {
+    testLogging {
+        exceptionFormat = 'full'
+    }
+}
