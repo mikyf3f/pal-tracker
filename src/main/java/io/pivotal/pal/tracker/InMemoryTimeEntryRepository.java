@@ -1,11 +1,14 @@
 package io.pivotal.pal.tracker;
 
+import org.springframework.stereotype.Component;
+
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.Collectors;
 
+@Component
 public class InMemoryTimeEntryRepository implements  TimeEntryRepository {
 
     private long currentId = 0;
